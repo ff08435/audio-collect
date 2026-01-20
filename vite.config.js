@@ -6,8 +6,13 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
+      strategies: "injectManifest",
+      injectManifest: {
+        swSrc: "public/service-worker.js",
+      },
       registerType: "autoUpdate",
       includeAssets: ["favicon.svg"],
+      injectRegister: "auto",
       manifest: {
         name: "Burushaski Audio Collection",
         short_name: "Burushaski",

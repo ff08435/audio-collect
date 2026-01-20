@@ -1,3 +1,4 @@
+//notify.js
 export function sendReminderNotification(title, body) {
   if (Notification.permission !== "granted") return;
 

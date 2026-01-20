@@ -1,3 +1,4 @@
+//syncRedcording.js
 import { db } from "../db/indexdb";
 import { uploadRecording } from "./uploadRecording";
 
